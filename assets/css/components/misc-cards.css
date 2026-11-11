@@ -1,0 +1,75 @@
+.utility-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.utility-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 8px;
+  border-radius: var(--radius-md);
+  background: var(--color-bg-elevated);
+  box-shadow: var(--shadow-sm);
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.utility-card__icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #eef0f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+}
+
+.utility-card__icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.post-card {
+  padding: 16px;
+  border-radius: var(--radius-md);
+  background: var(--color-bg-elevated);
+  box-shadow: var(--shadow-sm);
+}
+
+.post-card__title {
+  font-size: 14px;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.post-card__excerpt {
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+.footer {
+  margin-top: 40px;
+  padding: 20px 0 12px;
+  text-align: center;
+  font-size: 12.5px;
+  color: var(--color-text-muted);
+}
+
+.footer strong {
+  color: var(--color-text);
+}
+
+.footer .heart {
+  color: #ef4444;
+}

@@ -1,0 +1,198 @@
+.hero {
+  position: relative;
+  margin-top: 16px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.hero__cover {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  background: var(--gradient-primary);
+  overflow: hidden;
+}
+
+.hero__cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero__cover::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 40%, rgba(6, 6, 14, 0.75) 100%);
+}
+
+.hero__content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px 24px;
+}
+
+.hero__avatar-wrap {
+  position: relative;
+  width: 116px;
+  height: 116px;
+  margin-bottom: 14px;
+}
+
+/* Đĩa nền đặc phía sau avatar (tách khỏi ảnh cover) để viền/glow luôn rõ nét
+   dù cover là ảnh sáng hay tối */
+.hero__avatar-wrap::before {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  border-radius: 50%;
+  background: #1b1d2b;
+  z-index: 0;
+}
+
+.hero__avatar-glow {
+  position: absolute;
+  inset: -10px;
+  border-radius: 50%;
+  background: conic-gradient(from 0deg, #7c5cff, #22d3ee, #a78bfa, #7c5cff);
+  filter: blur(10px);
+  opacity: 0.85;
+  animation: glowPulse 2.6s ease-in-out infinite;
+  z-index: 1;
+}
+
+.hero__avatar {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.85);
+  background: #d9dbe3;
+}
+
+/* Nền đặc riêng cho khu vực tên + badge, tách khỏi ảnh cover phía sau
+   để huy hiệu xác minh màu xanh luôn nổi bật dù cover là ảnh gì */
+.hero__name-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  border-radius: var(--radius-full);
+  background: rgba(11, 13, 22, 0.55);
+  -webkit-backdrop-filter: var(--blur-md);
+  backdrop-filter: var(--blur-md);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.hero__name {
+  font-size: 24px;
+  font-weight: 800;
+  background: var(--gradient-name);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Vòng tròn nền trắng phía sau tick xanh để luôn tương phản rõ,
+   không phụ thuộc màu nền/cover phía sau */
+.hero__badge-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+}
+
+.hero__badge {
+  width: 16px;
+  height: 16px;
+  /* Màu cố định — không kế thừa currentColor trong suốt từ gradient text */
+  color: #2563eb;
+}
+
+.hero__meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hero__pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text-light);
+}
+
+.hero__pill svg {
+  width: 14px;
+  height: 14px;
+}
+
+.hero__domain {
+  margin-top: 6px;
+  font-size: 12px;
+  color: var(--color-text-light-muted);
+  word-break: break-all;
+}
+
+.hero__social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hero__social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 16px;
+  border-radius: var(--radius-full);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-text-light);
+}
+
+.hero__social-btn img {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+  .hero__cover {
+    aspect-ratio: 16 / 8;
+  }
+
+  .hero__avatar-wrap {
+    width: 140px;
+    height: 140px;
+  }
+
+  .hero__name {
+    font-size: 30px;
+  }
+}

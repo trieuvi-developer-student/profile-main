@@ -1,0 +1,77 @@
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.94); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 18px rgba(124, 92, 255, 0.35); }
+  50% { box-shadow: 0 0 32px rgba(124, 92, 255, 0.6); }
+}
+
+@keyframes ripple {
+  from { transform: scale(0); opacity: 0.45; }
+  to { transform: scale(2.2); opacity: 0; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.animate-fade-in { animation: fadeIn var(--transition-base) ease both; }
+.animate-slide-up { animation: slideUp var(--transition-base) ease both; }
+.animate-scale-in { animation: scaleIn var(--transition-base) ease both; }
+.animate-glow { animation: glowPulse 2.6s ease-in-out infinite; }
+
+.glass-hover {
+  transition: transform var(--transition-base), box-shadow var(--transition-base), background var(--transition-base);
+}
+
+.glass-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.glass-hover:active {
+  transform: translateY(0);
+}
+
+.btn-ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-ripple .ripple-dot {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.55);
+  pointer-events: none;
+  animation: ripple 0.5s ease-out;
+}
+
+.blinking-cursor {
+  display: inline-block;
+  width: 8px;
+  height: 1em;
+  background: var(--color-primary);
+  animation: blink 1s step-start infinite;
+  vertical-align: text-bottom;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
