@@ -100,13 +100,13 @@ export const musicTracks = [
   {
     title: 'Cho Em Gần Anh Thêm Chút Nữa (Remix)',
     artist: 'Dori',
-    src: 'https://res.cloudinary.com/cnilcn1p/video/upload/v1794414412/Cho_Em_Ga%CC%82%CC%80n_Anh_The%CC%82m_Chu%CC%81t_Nu%CC%9B%CC%83a_Remix.-594816253_cvybjg.mp4',
+    src: 'https://res.cloudinary.com/cnilcn1p/video/upload/v1794414412/Cho_Em_Ga%CC%82%CC%80n_Anh_The%CC%82m_Chu%CC%81t_Nu%CC%9B%CC%83a_Remix.-594816253_cvybjg.mp3_Remix.-594816253_cvybjg.mp4',
     cover: 'assets/music/cover.jpg'
   },
   {
     title: 'Young Dori',
     artist: 'Dori',
-    src: 'https://res.cloudinary.com/cnilcn1p/video/upload/v1794414481/youngdoridasick_kfzxlb.mp4',
+    src: 'https://res.cloudinary.com/cnilcn1p/video/upload/v1794414481/youngdoridasick_kfzxlb.mp3',
     cover: 'assets/music/cover.jpg'
   }
 ];
