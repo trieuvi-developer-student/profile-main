@@ -108,7 +108,69 @@ export const musicTracks = [
     artist: 'Dori',
     src: 'https://res.cloudinary.com/cnilcn1p/video/upload/v1794414481/youngdoridasick_kfzxlb.mp3',
     cover: 'assets/music/cover.jpg'
-  }
+  },
+  {
+    title: 'Young Dori',
+    artist: 'Dori',
+    src: 'https://res.cloudinary.com/cnilcn1p/video/upload/v1794414412/Cho_Em_Ga%CC%82%CC%80n_Anh_The%CC%82m_Chu%CC%81t_Nu%CC%9B%CC%83a_Remix.-594816253_cvybjg.mp3',
+    cover: 'assets/music/cover.jpg'
+},
+
+{
+    title: 'Young Dori',
+    artist: 'Dori',
+    src: 'https://res.cloudinary.com/cnilcn1p/video/upload/v1794494193/Nh%E1%BA%A1c_Trung_xceiw2.mp3',
+    cover: 'assets/music/cover.jpg'
+},
+
+{
+    title: 'Young Dori',
+    artist: 'Dori',
+    src: 'https://res.cloudinary.com/cnilcn1p/video/upload/v1794494207/l%E1%BB%A7ng_%C4%91%E1%BA%A7u_wocbmu.mp3',
+    cover: 'assets/music/cover.jpg'
+},
+
+{
+    title: 'Young Dori',
+    artist: 'Dori',
+    src: 'https://res.cloudinary.com/cnilcn1p/video/upload/v1794494205/Vol9_wmrxr0.mp3',
+    cover: 'assets/music/cover.jpg'
+},
+
+{
+    title: 'Young Dori',
+    artist: 'Dori',
+    src: 'https://res.cloudinary.com/cnilcn1p/video/upload/v1794494205/Nh%E1%BA%A1c_T%C3%A2y_ffoa4r.mp3',
+    cover: 'assets/music/cover.jpg'
+},
+
+{
+    title: 'Young Dori',
+    artist: 'Dori',
+    src: 'https://res.cloudinary.com/cnilcn1p/video/upload/v1794494199/%C4%90%C3%A9os%E1%BB%A3h%C3%ACnhs%E1%BB%B1_ny29cx.mp3',
+    cover: 'assets/music/cover.jpg'
+},
+
+{
+    title: 'Young Dori',
+    artist: 'Dori',
+    src: 'https://res.cloudinary.com/cnilcn1p/video/upload/v1794494198/c%E1%BA%AFn_nhi%E1%BB%81u_l%C3%A0_m%C3%A0y_ch%E1%BA%BFt_w7upri.mp3',
+    cover: 'assets/music/cover.jpg'
+},
+
+{
+    title: 'Young Dori',
+    artist: 'Dori',
+    src: 'https://res.cloudinary.com/cnilcn1p/video/upload/v1794494197/qu%E1%BB%B7_e36m9t.mp3',
+    cover: 'assets/music/cover.jpg'
+},
+
+{
+    title: 'Young Dori',
+    artist: 'Dori',
+    src: 'https://res.cloudinary.com/cnilcn1p/video/upload/v1794494175/Vol_0_-_L%E1%BB%8Dt_y84f5b.mp3',
+    cover: 'assets/music/cover.jpg'
+}
 ];
 
 export const posts = [];
